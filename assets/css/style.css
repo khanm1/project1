@@ -1,0 +1,42 @@
+.navbarnavbar-expand-lg {
+    background: rgb(255,0,0);
+}
+
+
+body{
+background:rgb(179,221,242);
+
+}
+
+
+
+.jumbotron{
+background-image: url("../images/chicago.jpg");
+background-size: auto 100%;
+font-family: Nunito;
+}
+
+.contFont{
+    font-family: Nunito;
+    font-size: 30px;
+}
+
+.btn-warning{
+    background:red;
+    color:rgb(179,221,242);
+}
+
+h1{
+    text-align: center
+}
+
+.emailUpdate{
+    font-size:30px;
+    font-family: Nunito;
+}
+
+.btn-info{
+    background:red;
+    color:rgb(179,221,242);
+
+}
