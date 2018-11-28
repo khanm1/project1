@@ -1,23 +1,17 @@
+
 .navbarnavbar-expand-lg {
     background: rgb(255,0,0);
 }
-
-
-body{
-background:rgb(179,221,242);
-
-}
-
-
-
 .jumbotron{
 background-image: url("../images/chicago.jpg");
 background-size: auto 100%;
 font-family: Nunito;
 color: red;
-
+padding: 4rem 2em;
 }
-
+.jumbotron h1{
+    background:rgb(0,0,0,.5);
+}
 .contFont{
     font-family: Nunito;
     font-size: 30px;
@@ -31,7 +25,16 @@ color: red;
 h1{
     text-align: center
 }
-
+.main-background{
+    background: #FFF;
+}
+.set-height{
+    height:250px;
+    overflow-y: auto;
+}
+footer{
+    background: rgb(179,221,242);
+}
 .emailUpdate{
     font-size:30px;
     font-family: Nunito;
@@ -47,25 +50,11 @@ h1{
     font-family: Nunito;
     font-size: 30px;
 }
+@media(max-width:575px){
+    .jumbotron{
+        background-size: cover;
+    }
 
-.fa-instagram{
-    font-size:80px;
-    padding: 20px;
-    
 }
 
-.fa-facebook-f{
-    font-size:80px;
     
-}
-
-.fa-twitter{
-    font-size: 80px;
-    
-    
-}
-
-a {margin-right: 20px;
-    padding-inline-start: 30px;
-
-};
