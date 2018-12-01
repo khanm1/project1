@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+    <title>Crime Project</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Neighborhood Crimes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="jumbotron text-center ">
+        <h1>Neighborhood Crimes</h1>
+        <hr class="my-4">
+
+    </div>
+    <div class="main-background">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 px-5 py-4">
+                <h1 class="contFont text-center">Search Crimes In Your Hood</h1>
+                <form>
+                    <div class="form-row">
+                        <div class="col-7">
+                            <input type="text" class="form-control" placeholder="Neighborhood">
+                        </div>
+
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Zip">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                            <label for="exampleFormControlSelect1">Select your ward!</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option class = "wardValue">1</option>
+                              <option class = "wardValue">2</option>
+                              <option class = "wardValue">3</option>
+                              <option class = "wardValue">4</option>
+                              <option class = "wardValue">5</option>
+                              <option class = "wardValue">6</option>
+                              <option class = "wardValue">7</option>
+                              <option class = "wardValue">8</option>
+                              <option class = "wardValue">9</option>
+                              <option class = "wardValue">10</option>
+                              <option class = "wardValue">11</option>
+                              <option class = "wardValue">12</option>
+                              <option class = "wardValue">13</option>
+                              <option class = "wardValue">14</option>
+                              <option class = "wardValue">15</option>
+                              <option class = "wardValue">16</option>
+                              <option class = "wardValue">17</option>
+                              <option class = "wardValue">18</option>
+                              <option class = "wardValue">19</option>
+                              <option class = "wardValue">20</option>
+                              <option class = "wardValue">21</option>
+                              <option class = "wardValue">22</option>
+                              <option class = "wardValue">23</option>
+                              <option class = "wardValue">24</option>
+                              <option class = "wardValue">25</option>
+                              <option class = "wardValue">26</option>
+                              <option class = "wardValue">27</option>
+                              <option class = "wardValue">28</option>
+                              <option class = "wardValue">29</option>
+                              <option class = "wardValue">30</option>
+                              <option class = "wardValue">31</option>
+                              <option class = "wardValue">32</option>
+                              <option class = "wardValue">33</option>
+                              <option class = "wardValue">34</option>
+                              <option class = "wardValue">35</option>
+                              <option class = "wardValue">36</option>
+                              <option class = "wardValue">37</option>
+                              <option class = "wardValue">38</option>
+                              <option class = "wardValue">39</option>
+                              <option class = "wardValue">40</option>
+                              <option class = "wardValue">41</option>
+                              <option class = "wardValue">42</option>
+                              <option class = "wardValue">43</option>
+                              <option class = "wardValue">44</option>
+                              <option class = "wardValue">45</option>
+                              <option class = "wardValue">46</option>
+                              <option class = "wardValue">47</option>
+                              <option class = "wardValue">48</option>
+                              <option class = "wardValue">49</option>
+                              <option class = "wardValue">50</option>
+
+                            </select>
+                          </div>
+                </form>
+                <h5 class="pt-4 border-bottom">Crime Results</h5>
+                <div class="set-height">
+                    Mauris convallis finibus lorem et venenatis. Pellentesque efficitur tellus ac felis iaculis, ut dictum lorem sagittis. Donec a finibus nunc, in congue erat. Morbi gravida mauris sed ipsum maximus, a euismod sem tempus. Suspendisse vestibulum sit amet erat quis lobortis. Donec eget mauris dui. Vivamus ultricies vehicula ullamcorper. Etiam pharetra, lacus et vehicula finibus, quam mi malesuada ligula, sed luctus odio odio porta metus. Donec finibus bibendum turpis id laoreet. Vestibulum at rhoncus ligula, tincidunt tempus libero.
+                    Nunc diam ipsum, pretium ac consectetur quis, sodales vitae lectus. Nullam tempor pharetra arcu at varius. Sed turpis eros, egestas sit amet augue suscipit, cursus dictum diam. Proin metus ipsum, tristique quis faucibus eu, lacinia sit amet augue. Fusce volutpat eget sapien rhoncus malesuada. Etiam sed est vel ligula imperdiet bibendum sed eu enim. Phasellus sit amet fringilla lorem. Vestibulum orci magna, semper non eros vitae, aliquam bibendum nisi.
+                </div>
+            </div>
+            <div class="col-12 col-md-6 map" id="map" style="max-width:450px;"></div>
+    </div>
+    </div>
+    <footer class="border border-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 px-2 py-2">
+                <h4>LINKS</h4>
+                <ul>
+                    <li><a href="/">LINK 1</a></li>
+                    <li><a href="/">LINK 2</a></li>
+                    <li><a href="/">LINK 3</a></li>
+                    <li><a href="/">LINK 4</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 px-3 py-2">
+                <h1 class="emailUpdate">Sign Up for Updates</h1>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email Address">
+                        <br>
+                        <button class="btn btn-info btn-lg btn-block">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-4 px-2 py-2">
+                <h1 class="socialText">Follow us at</h1>
+
+                <div class="col-4 col-xs-12 text-center d-inline"><a href="www.twitter.com"> <i class="fab fa-twitter fa-4x"></i></a></div>
+                <div class="col-4 col-xs-12 text-center d-inline"> <a href="www.twitter.com"> <i class="fab fa-instagram fa-4x"></i></a></div>
+                <div class="col-4 col-xs-12 text-center d-inline pl-4"><a href="www.facebook.com"> <i class="fab fa-facebook fa-4x"></i></a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js" integrity="sha256-owX7sroiO/O1a7h3a4X29A1g3QgqdNvijRQ7V5TH45M=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="assets/javascript.js"></script> 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoe-lblzntiCt-1o_xxzweSPnHcLVXkDY&callback=startApp" onerror="errorHandlingMap()" ></script> 
+</body>
+
+</html>
