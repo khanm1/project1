@@ -58,10 +58,11 @@ $("#submitButton").on("click",function(event){
         User_Name: userName,
         User_Email: userEmail
 
-
+    
 })
 
-
+document.getElementById('formGroupExampleInput').value='';
+document.getElementById('formGroupExampleInput2').value='';
 
 
 });
@@ -149,6 +150,8 @@ function DeleteMarkers() {
     }
     markers = [];
 };
+
+
 function setMapOnAll(map) {
 
 
