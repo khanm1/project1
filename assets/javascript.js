@@ -57,27 +57,47 @@ Location = function(data) {
     // appToken = 'YzC8UJUmnG4U64Fqp3tvSS5Lr';
      // secretToken = 'Xx1qRfB6ufhh8k28yPzZiJ92iZTwKjpteGCg';
     // Chicago Data Portal API Link to call.
-    var chicagoDataURL = 'https://data.cityofchicago.org/resource/6zsd-86xi.json';
-    // Gets the data from Chicago Data Portal and store it into its' own variables.
-    $.getJSON(chicagoDataURL).done(function (data) {
-        var results = data.array;
-        ward.URL = results.url;
-       if (typeof ward.URL === 'undefined') {
-           ward.URL = "";
+    var chicagoDataURL = 'https://api1.chicagopolice.org/clearpath/api/1.0/crimes/major';
+    var wardBtn;
+
+    $("#exampleFormControlSelect1").on("change", function () {
+        wardBtn = $(this).val();
+        test();
+        console.log(wardBtn);
+    })
+
+function test() {
+
+
+    $.ajax({
+        url: chicagoDataURL,
+        method: "GET"
+    }).then(function (response) {
+
+        // var results = data.array;
+        // ward.URL = results.url;
+        console.log("testing" + response.length);
+        for (var i = 0; i < response.length; i++) {
+            console.log(response[i].ward);
+            var xCoord = response[i].xCoordinate;
+            var yCoord = response[i].yCoordinate;
+            if (response[i].ward = wardBtn){
+                console.log(response[i]);
+                
+           
+                // // var p =$("<p>");
+                // console.log("this is x" +xCoord);
+                // console.log("this is y "+ yCoord);
+                // // $("#map").append(p);
+
+             console.log (yCoord);
+             console.log(xCoord);
+            }
+         
         }
-        ward.street = results.block || 'No Address Provided';
-        ward.date = results.date || 'No date Provided';
-        ward.type = results.type || 'No type Provided';
-    }).fail(function () {
-        $('.list').html('There was an error with the Chicago Data Portal API call. Please refresh the page and try again to load Chicago Data Portal data.');
-    });
-    // This is what the infowindow will contain when clicked.
-    this.contentString = '<div class="info-window-content"><div class="title"><b>' + data.name + "</b></div>" +
-        '<div class="content"><a href="' + ward.URL + '">' + ward.URL + "</a></div>" +
-        '<div class="content">' + ward.street + "</div>" +
-        '<div class="content">' + ward.date + "</div>" +
-        '<div class="content">' + ward.type + "</div></div>";
-    // Puts the content string inside infowindow.
+    }
+    )
+};
     this.infoWindow = new google.maps.InfoWindow({content: ward.contentString});
     // Places the marker to it's designed location on the map along with it's title.
     this.marker = new google.maps.Marker({
@@ -235,3 +255,4 @@ function errorHandlingMap() {
 function startApp() {
     ko.applyBindings(new ViewModel());
 }
+ 

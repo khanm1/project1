@@ -57,4 +57,13 @@ footer{
 
 }
 
+.scoop{
+    margin-bottom: 10px;
+}
+
+.scoop2{
+    height: 1px;
+    background-color: #777777;
+    width: 40%;
+}
     
